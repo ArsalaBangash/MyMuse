@@ -1,15 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+
+// Router Imports
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Routing/Router";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>mymuse landing page</p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Router />
+      </div>
+    </BrowserRouter>
   );
 }
 
