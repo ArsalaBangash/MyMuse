@@ -1,9 +1,17 @@
 import React from "react";
 
+// Style imports 
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
+
 const Landing = () => (
-    <div>
-      <h4>Landing Page</h4>
-    </div>
+  <Container className="p-3">
+    <Jumbotron>
+      <div>
+        <h4>MyMuse</h4>
+      </div>
+    </Jumbotron>
+  </Container>
 );
 
 export default Landing;
